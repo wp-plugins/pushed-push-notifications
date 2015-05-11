@@ -7,13 +7,13 @@
 
     /**
     * Plugin Name: Pushed
-    * Plugin URI: http://wordpress.org/plugins/pushed/
+    * Plugin URI: https://wordpress.org/plugins/pushed-push-notifications/
     * Description: Push notifications plugin for wordpress by Pushed
     * Author: Get Pushed Ltd
     * Author URI: https://pushed.co/
     * Version: 1.0.0
     *
-    * Copyright 2014 Get Pushed Ltd (email: hello@pushed.co)
+    * Copyright 2015 Get Pushed Ltd (email: hello@pushed.co)
     * This program is free software; you can redistribute it and/or modify
     * it under the terms of the GNU General Public License as published by
     * the Free Software Foundation; either version 2 of the License, or
