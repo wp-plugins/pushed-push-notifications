@@ -4,7 +4,7 @@ Website link: https://pushed.co
 Tags: pushed, push notifications, push, notifications, notification
 Requires at least: 3.0.1
 Tested up to: 4.1
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,11 +12,19 @@ Pushed Push Notifications plugin allows you to send push notifications to iOs, A
 
 == Description ==
 
+<h3>Send Push Notifications from your Wordpress site: it's Free!</h3>
 Pushed Push Notifications Wordpress plugin allows you to send push notifications to iOs, Android and Desktop devices every time you publish a new post. The plugin integrates your WordPress blog with your <a href="https://pushed.co/" target="_blank">Pushed</a> app. It's completely free.
 
-Integration between Wordpress and Pushed is <b>free</b> and <b>effortless</b>. <a href="https://account.pushed.co/signup" target="_blank">Sign Up in Pushed</a> and request a <a href="https://account.pushed.co/" target="_blank">Developer Account</a>. It will only take 5 minutes! Here you have a <a href="https://pushed.co/#get-started" target="_blank">complete guide to get started</a>. If you need further assistance, please do not hesitate <a href="https://about.pushed.support/">contacting us</a>, we\'ll be glad to help.</div>
+Integration between Wordpress and Pushed is <b>free</b> and <b>effortless</b>. <a href="https://account.pushed.co/signup" target="_blank">Sign Up in Pushed</a> and request a <a href="https://account.pushed.co/" target="_blank">Developer Account</a>. It will only take 5 minutes! Here you have a <a href="https://pushed.co/#get-started" target="_blank">complete guide to get started</a>. If you need further assistance, please do not hesitate <a href="https://about.pushed.support/">contacting us</a>, we will be glad to help.</div>
+
+<h3>About Pushed</h3>
+
+Pushed allows you to send real-time notifications to iOs, Android and Desktop devices. Check out <a href="https://pushed.co" title="Pushed" target="_blank">pushed.co</a> to learn more. Do not hesitate <a href="https://about.pushed.co/support" title="Pushed Support" target="_blank">contacting us</a> if you need any help.
 
 == Changelog ==
+= 1.2 =
+* Add about description.
+
 = 1.1 =
 * Update plugin URL.
 * Add Pushed Developer Panel screenshot.
