@@ -2,7 +2,7 @@
 
     /**
      * @package Pushed
-     * @version 1.0.0
+     * @version 1.3.1
      */
 
     /**
@@ -11,7 +11,7 @@
     * Description: Push notifications plugin for wordpress by Pushed
     * Author: Get Pushed Ltd
     * Author URI: https://pushed.co/
-    * Version: 1.0.0
+    * Version: 1.3.1
     *
     * Copyright 2015 Get Pushed Ltd (email: hello@pushed.co)
     * This program is free software; you can redistribute it and/or modify
