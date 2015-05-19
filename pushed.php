@@ -11,7 +11,7 @@
     * Description: Push notifications plugin for wordpress by Pushed
     * Author: Get Pushed Ltd
     * Author URI: https://pushed.co/
-    * Version: 1.3.1
+    * Version: 1.3.2
     *
     * Copyright 2015 Get Pushed Ltd (email: hello@pushed.co)
     * This program is free software; you can redistribute it and/or modify
@@ -118,12 +118,12 @@
 
 	function pushed_send_push_by_post($post_id, $post_title, $post_url) {
 
-		$pushed_target_credentials = [
+		$pushed_target_credentials = array(
 			'app_key' => get_option('pushed_app_key', array('text_string' => null))['text_string'],
 			'app_secret' => get_option('pushed_app_secret', array('text_string' => null))['text_string'],
 			'target_type' => get_option('pushed_target_type', array('text_string' => null))['text_string'],
 			'target_alias' => get_option('pushed_target_alias', array('text_string' => null))['text_string'],
-		];
+		);
 
 		$pushed  = new Pushed($pushed_target_credentials);
 
