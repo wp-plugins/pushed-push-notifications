@@ -19,12 +19,13 @@ Integration between Wordpress and Pushed is <b>free</b> and <b>effortless</b>. <
 
 <h3>About Pushed</h3>
 
-Pushed allows you to send real-time notifications to <a href="">iOs</a>, <a href=""Android and Desktop devices. Check out <a href="https://pushed.co" title="Pushed" target="_blank">pushed.co</a> to learn more.
+Pushed allows you to send real-time notifications to <a href="https://pushed.co/download/ios" target="_blank">iOs</a>, <a href="https://pushed.co/download/android" target="_blank">Android</a> and <a href="https://account.pushed.co">Desktop</a> devices. Check out <a href="https://pushed.co" title="Pushed" target="_blank">pushed.co</a> to learn more.
 
 == Changelog ==
 = 1.4 =
 * Add credentials validation.
 * Bugfix: array support for old PHP versions.
+* Addo local logo resources.
 
 = 1.3.2 =
 * Bugfix: array support for old PHP versions.
