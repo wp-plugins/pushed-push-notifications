@@ -150,7 +150,6 @@ class PushedSettings {
 		wp_register_script('pushed_js', plugins_url('/js/pushed.js', __FILE__), array(), '1.0');
 		wp_register_style('pushed_css', plugins_url('/css/pushed.css', __FILE__), array(), '1.0');
 
-
 		foreach ($this->_config['sections'] as $key => $section):
 			add_settings_section(
 				$key,
@@ -168,7 +167,9 @@ class PushedSettings {
 					$function = array($this->_section, 'input_text');
 				}
 
-				$callback = null;
+				/** Validate input settings */
+				$callback = 'pushed_input_settings_validation';
+
 				add_settings_field(
 					$this->_config['group'] . '_' . $field_key,
 					__($field_value['label'], 'pushed'),
@@ -215,6 +216,29 @@ class PushedSettings {
 		$this->_section->input_submit(__('Save changes', 'pushed'));
 		$this->_section->form_end();
 	}
+}
+
+function pushed_input_settings_validation($input) {
+
+	 /** Create our array for storing the validated options */
+	$output = array();
+
+	/** Loop through each of the incoming options */
+	foreach( $input as $key => $value ) {
+		 
+		/** Check to see if the current option has a value. If so, process it. */
+		if( isset( $input[$key] ) ) {
+		 
+			/** Strip all HTML and PHP tags and properly handle quoted strings */
+			$output[$key] = strip_tags( stripslashes( $input[ $key ] ) );
+			 
+		}
+		 
+	}
+
+	/** Return the array processing any additional functions filtered by this action */
+	return apply_filters( 'sandbox_theme_validate_input_examples', $output, $input );
+
 }
 
 new PushedSettings();
