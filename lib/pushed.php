@@ -10,7 +10,7 @@ class PushedBadRequestException extends Exception {
 
 class Pushed {
 
-	protected $settings = ['server' => 'https://api.pushed.co/1/'];
+	protected $settings = array('server' => 'https://api.pushed.co/1/');
 
 	public function __construct($auth = array()) {
 		
@@ -18,7 +18,7 @@ class Pushed {
 	
 	}
 
-	public function request($method, $content = []) {		
+	public function request($method, $content = array()) {		
 		 
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL, $this->settings['server'] . $method);
@@ -57,11 +57,11 @@ class Pushed {
 
 	public function push($notification_content = NULL, $notification_url = NULL) {
 
-		$content = [
+		$content = array(
 			'content' => $notification_content,
 			'content_type' => 'url',
 			'content_extra' => $notification_url,
-		];
+		);
 
 		return $this->request('push', $content);		
 	}

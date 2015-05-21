@@ -4,7 +4,7 @@ Website link: https://pushed.co
 Tags: pushed, push notifications, push, notifications, notification
 Requires at least: 3.0.1
 Tested up to: 4.1
-Stable tag: 1.4
+Stable tag: 1.4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,6 +22,9 @@ Integration between Wordpress and Pushed is <b>free</b> and <b>effortless</b>. <
 Pushed allows you to send real-time notifications to <a href="https://pushed.co/download/ios" target="_blank">iOs</a>, <a href="https://pushed.co/download/android" target="_blank">Android</a> and <a href="https://account.pushed.co">Desktop</a> devices. Check out <a href="https://pushed.co" title="Pushed" target="_blank">pushed.co</a> to learn more.
 
 == Changelog ==
+= 1.4.1 =
+* Bugfix: Add array support for old PHP versions.
+
 = 1.4 =
 * Add credentials validation.
 * Bugfix: array support for old PHP versions.

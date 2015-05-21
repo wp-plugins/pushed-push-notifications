@@ -2,7 +2,7 @@
 
 	/**
 	 * @package Pushed
-	 * @version 1.4
+	 * @version 1.4.1
 	 */
 
 	/**
@@ -11,7 +11,7 @@
 	* Description: Push notifications plugin for wordpress by Pushed
 	* Author: Get Pushed Ltd
 	* Author URI: https://pushed.co/
-	* Version: 1.4
+	* Version: 1.4.1
 	*
 	* Copyright 2015 Get Pushed Ltd (email: hello@pushed.co)
 	* This program is free software; you can redistribute it and/or modify
@@ -271,21 +271,21 @@
 	function add_error_notice($location) {
 
 		remove_filter('redirect_post_location', 'add_notice_query_var', 99 );
-		return add_query_arg(['pushed_error' => 'true'], $location );
+		return add_query_arg(array('pushed_error' => 'true'), $location );
 
 	}
 
 	function add_error_credentials_notice($location) {
 
 		remove_filter('redirect_post_location', 'add_notice_query_var', 99 );
-		return add_query_arg(['pushed_credentials_error' => 'true'], $location );
+		return add_query_arg(array('pushed_credentials_error' => 'true'), $location );
 
 	}
 
 	function add_success_notice($location) {
 
 		remove_filter('redirect_post_location', 'add_notice_query_var', 99 );
-		return add_query_arg(['pushed_success' => 'true'], $location );
+		return add_query_arg(array('pushed_success' => 'true'), $location );
 
 	}
 
